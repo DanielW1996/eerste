@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <script>
+         //function that display value
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+           
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+           
+         //function that clear the display
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+      <!-- for styling -->
+      <style>
+
+      </style>
+   </head>
+   <!-- create table -->
+   <body>
+      <div class = title >GeeksforGeeks Calculator</div>
+
+    <input type="text" id="result"/>
+
+    <input type="button" value="1" onclick="dis('1')"/>
+    <input type="button" value="2" onclick="dis('2')"/>
+    <input type="button" value="+" onclick="dis('+')"/>
+    <input type="button" value="=" onclick="solve()"/>
+
+   </body>
+</html>

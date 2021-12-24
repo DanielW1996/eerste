@@ -16,11 +16,12 @@
 
         // Function declaration
         function test() {
-            alert('In de test');
+            // alert('In de test');
 
             // Uitlezen
             var element1 = document.getElementById('invoer1');
-            alert('_' + element1.value + '_');
+            // alert('_' + element1.value + '_');
+            // var element2 = document.getElementById('invoer2');
             
             // Toe schrijven
             document.getElementById('antwoord').innerText = 'Nog geen antwoord';
@@ -32,14 +33,14 @@
 <body>
     <h1>Rekenmachine</h1>
 
-    <input id="invoer1" type="text" onclick="alert('In element');">
-    <button type="button" onclick="alert('In button');">
+    <input id="invoer1" type="text">
+    <input id="invoer2" type="text">
+    <button type="button" onclick="alert('Het antwoord is');">
         Click me
     </button>
 
     <span>Het antwoord is :</span>
     <span id="antwoord"></span>
-    <span>Hallo</span>
     
 </body>
 </html>
